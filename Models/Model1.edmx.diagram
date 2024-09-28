@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2e2332bcd089420082b6567e8a94dde7" Name="Diagram1">
+        <EntityTypeShape EntityType="RAisoDatabaseModel.Cart" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RAisoDatabaseModel.MsStationery" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RAisoDatabaseModel.MsUser" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="RAisoDatabaseModel.TransactionDetail" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RAisoDatabaseModel.TransactionHeader" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="RAisoDatabaseModel.FK_Cart_ToMsStationery" ManuallyRouted="false" />
+        <AssociationConnector Association="RAisoDatabaseModel.FK_Cart_ToMsUser" ManuallyRouted="false" />
+        <AssociationConnector Association="RAisoDatabaseModel.FK_TransactionDetail_ToMsStationery" ManuallyRouted="false" />
+        <AssociationConnector Association="RAisoDatabaseModel.FK_TransactionHeader_ToMsUser" ManuallyRouted="false" />
+        <AssociationConnector Association="RAisoDatabaseModel.FK_TransactionDetail_ToTransactionHeader" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
